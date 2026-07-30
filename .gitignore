@@ -1,0 +1,125 @@
+# ==========================================
+# Custom MLOps & Data Science .gitignore
+# ==========================================
+
+# -----------------------------------------
+# Environment & Secrets (CRITICAL)
+# -----------------------------------------
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# Environment Variables & API Keys (Never push these!)
+.env
+*.env
+secrets.yaml
+secret.json
+aws_credentials.csv
+
+# -----------------------------------------
+# Data Science & Machine Learning
+# -----------------------------------------
+# Datasets (Data is too big for Git, use DVC instead)
+*.csv
+*.tsv
+*.parquet
+*.zip
+*.tar.gz
+*.pickle
+*.pkl
+*.h5
+*.npy
+*.npz
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# MLflow Tracking & Model Artifacts
+mlruns/
+mlartifacts/
+*.mlops
+outputs/
+logs/
+wandb/
+
+# -----------------------------------------
+# MLOps Tools Configurations
+# -----------------------------------------
+# DVC (Ignore the local cache, but keep .dvc/config)
+.dvc/cache/
+.dvc/tmp/
+
+# Apache Airflow
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+logs/
+unittests.cfg
+
+# -----------------------------------------
+# Python Specific
+# -----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing / Coverage Reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# -----------------------------------------
+# IDEs & Editors
+# -----------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# -----------------------------------------
+# OS Generated Files
+# -----------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

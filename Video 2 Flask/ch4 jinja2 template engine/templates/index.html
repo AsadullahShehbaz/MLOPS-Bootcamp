@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Based on the marks you have {{ results }}</h1> -->
+    {# comment 
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        
+        {% for key , value in results.items() %}
+
+        <tr>
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+        
+        </tr>
+
+        {% endfor %}
+        #}
+        {# 
+        {% if results >=50 %}
+        <h2>Passed</h2>
+        {% else %}
+        <h2>Failed</h2>
+
+        {% endif %}
+        #}
+
+        <form action="/submit" method = "POST">
+            <label for="science">Science:</label>
+            <input type="number" id="science" name="science">
+
+            <label for="maths">Math:</label>
+            <input type="number" id="maths" name="maths">
+
+            <label for="c">C Programming:</label>
+            <input type="number" id="c" name="c">
+
+            <label for="ds">Data Science:</label>
+            <input type="number" id="ds" name="ds">
+
+            <button type="submit">Calculate Result</button>
+        </form>
+    </table>
+</body>
+</html>
