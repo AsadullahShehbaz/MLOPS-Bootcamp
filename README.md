@@ -1,4 +1,7 @@
-# 🚀 Complete MLOps Bootcamp: 10+ End-to-End ML Projects
+[![MLOPS Bootcamp](bootcamp.png)](https://www.youtube.com/playlist?list=PLLycvXW36iMQ)
+
+
+# 🚀 Complete MLOps Bootcamp: 5+ End-to-End ML Projects
 
 > **Transition from building Jupyter Notebooks to deploying scalable, production-ready Machine Learning pipelines.**
 
