@@ -24,7 +24,7 @@ aws_credentials.csv
 # Data Science & Machine Learning
 # -----------------------------------------
 # Datasets (Data is too big for Git, use DVC instead)
-*.csv
+
 *.tsv
 *.parquet
 *.zip
