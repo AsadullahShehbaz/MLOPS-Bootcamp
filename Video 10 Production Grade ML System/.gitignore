@@ -1,0 +1,4 @@
+mlruns/
+models/
+data/processed/
+mlartifacts/
